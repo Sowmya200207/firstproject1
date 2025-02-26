@@ -6,6 +6,7 @@ public class Book {
     String title;
     String author;
     boolean availability;
+    //someswarii karanam
 
     public Book(int id, String title, String author, boolean availability) {
         this.id = id;
