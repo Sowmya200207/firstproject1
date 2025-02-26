@@ -1,0 +1,18 @@
+101,someswari
+102,priya
+103,sowmya
+104,revathi
+105,mounika
+       try(BufferedReader br=new BufferedReader(new FileReader("C:/Users/SomeswariKaranam/OneDrive - Atyeti Inc/Documents" +
+               "/CORE JAVA/library_management_system/src/main/java/org/example/libraryManagement/members.csv"))){
+           String line;
+           while((line= String.valueOf(br.readLine()!=null)){
+               String[] parts=line.split(",");
+               int memberId = Integer.parseInt(parts[0]);
+               String memberName = parts[1];
+               Member member = new Member(memberId, memberName);
+               library.addMember(member);
+           }
+       } catch (IOException e) {
+           throw new RuntimeException(e);
+       }
